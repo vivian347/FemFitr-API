@@ -1,0 +1,45 @@
+<!-- templates/home.html -->
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>FemFitr API - Home</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
+            <li><a href="{% url 'account_login' %}">Sign In</a></li>
+            <li><a href="{% url 'account_logout' %}">Logout</a></li>
+            {% comment %} <li><a href="{% url 'dashboard' %}">Dashboard</a></li> {% endcomment %}
+            {% comment %} <li><a href="{% url 'documentation' %}">Documentation</a></li> {% endcomment %}
+        </ul>
+    </nav>
+    
+    <h1>Welcome to FemFitr API</h1>
+    
+    <p>FemFitr API is a revolutionary fitness tracking platform for women. By leveraging advanced algorithms, it suggests personalized workouts aligned with users' energy levels during different menstrual cycle phases. With cycle-based insights and precise tracking, FemFitr helps women optimize their workouts, improve performance, and achieve fitness goals while honoring their body's natural rhythms.</p>
+    
+    <h2>API Features</h2>
+    <ul>
+        <li>Personalized workout recommendations based on menstrual cycle phases</li>
+        <li>Energy level tracking and analysis</li>
+        <li>Goal setting and progress monitoring</li>
+        <li>Integration with fitness trackers and wearable devices</li>
+        <li>Historical data and trends visualization</li>
+    </ul>
+    
+    <h2>Getting Started</h2>
+    <p>To get started with FemFitr API, you will need an API key. Sign up on our website to obtain your unique API key. Once you have the key, you can start making requests to our API endpoints to access the various features and functionalities.</p>
+    
+    <h2>API Documentation</h2>
+    <p>Refer to our API documentation for detailed information on the available endpoints, request/response formats, and authentication requirements. The documentation will guide you on how to integrate and utilize FemFitr API effectively in your applications.</p>
+    
+    <h2>Support</h2>
+    <p>If you have any questions, issues, or feedback regarding FemFitr API, please don't hesitate to contact our support team. We are here to assist you and ensure you have a seamless experience using our API.</p>
+</body>
+</html>
