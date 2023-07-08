@@ -153,3 +153,4 @@ def delete_goal(request, user_id, goal_id):
     goal = get_object_or_404(GoalSetting, user=profile.user, id=goal_id)
     goal.delete()
     return Response(status=204)
+

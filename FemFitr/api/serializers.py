@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import CycleTracking, Profile, GoalSetting
+from .models import CycleTracking, Profile, GoalSetting, Exercise
 
 class CycleTrackingSerializer(serializers.ModelSerializer):
     class Meta:
@@ -14,4 +14,9 @@ class ProfileSerializer(serializers.ModelSerializer):
 class GoalSerializer(serializers.ModelSerializer):
     class Meta:
         model= GoalSetting
+        fields='__all__'
+
+class Exercise(serializers.ModelSerializer):
+    class Meta:
+        model=Exercise
         fields='__all__'

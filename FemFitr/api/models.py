@@ -45,3 +45,13 @@ class GoalSetting(models.Model):
 
     def __str__(self) -> str:
         return self.goal
+    
+class Exercise(models.Model):
+    name = models.CharField(max_length=255)
+    muscle = models.CharField(max_length=255)
+    difficulty = models.CharField(max_length=255)
+    equipment = models.CharField(max_length=255)
+    description = models.CharField(max_length=10000)
+
+    def __str__(self):
+        return self.name
